@@ -23,7 +23,7 @@ namespace Paging.WebApi.Controllers
         [HttpGet]
         public PageResult<Users> Get(int? page, int pagesize = 10)
         {
-            // pagesize  default set to 10, you can send the value you want in the frontend
+            // pagesize  default set to 10, you can send the value you want in the frontend.
             var countDetails = _context.Users.Count();
             return new PageResult<Users>
             {
